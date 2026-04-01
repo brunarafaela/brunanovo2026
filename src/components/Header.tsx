@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Mail, FileText } from "lucide-react";
+import { Mail, FileText, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
   return (
