@@ -51,6 +51,13 @@ const Header = () => {
           <FileText className="w-3.5 h-3.5" />
           Currículo
         </a>
+        <button
+          onClick={() => setDark(!dark)}
+          className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+          aria-label="Alternar tema"
+        >
+          {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+        </button>
       </div>
     </motion.header>
   );
