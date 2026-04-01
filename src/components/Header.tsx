@@ -1,7 +1,20 @@
 import { motion } from "framer-motion";
-import { Mail, FileText } from "lucide-react";
+import { Mail, FileText, Moon, Sun } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
+  const [dark, setDark] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("theme") === "dark";
+    }
+    return false;
+  });
+
+  useEffect(() => {
+    document.documentElement.classList.toggle("dark", dark);
+    localStorage.setItem("theme", dark ? "dark" : "light");
+  }, [dark]);
+
   return (
     <motion.header
       initial={{ opacity: 0, y: -10 }}
@@ -38,6 +51,13 @@ const Header = () => {
           <FileText className="w-3.5 h-3.5" />
           Currículo
         </a>
+        <button
+          onClick={() => setDark(!dark)}
+          className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+          aria-label="Alternar tema"
+        >
+          {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
+        </button>
       </div>
     </motion.header>
   );
