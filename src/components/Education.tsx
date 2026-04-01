@@ -1,12 +1,9 @@
 import { motion } from "framer-motion";
-
-const education = [
-  { type: "Especialização", title: "Pós-graduação em Engenharia de Software com Metodologias Ágeis", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
-  { type: "Graduação", title: "Tecnólogo em Análise e Desenvolvimento de Sistemas", institution: "FATEC Ipiranga", period: "2016 - 2020" },
-  { type: "Técnico", title: "Técnico em Informática", institution: "ETEC de Heliópolis", period: "2013 - 2014" },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Education = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="px-6 md:px-12 lg:px-16 py-20">
       <motion.p
@@ -15,11 +12,11 @@ const Education = () => {
         viewport={{ once: true }}
         className="text-sm font-medium text-primary mb-8"
       >
-        Formação Acadêmica
+        {t.academicBackground}
       </motion.p>
 
       <div className="space-y-0">
-        {education.map((edu, i) => (
+        {t.educationItems.map((edu, i) => (
           <motion.div
             key={edu.title}
             initial={{ opacity: 0, y: 20 }}

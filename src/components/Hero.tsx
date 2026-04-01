@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Github, Linkedin, Instagram, Twitch, ArrowUpRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const socialLinks = [
   { icon: Github, href: "https://github.com/brunarafaela", label: "GitHub" },
@@ -9,6 +10,8 @@ const socialLinks = [
 ];
 
 const Hero = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="px-6 md:px-12 lg:px-16 pt-20 pb-16">
       <motion.h1
@@ -17,7 +20,7 @@ const Hero = () => {
         transition={{ duration: 0.6, delay: 0.1 }}
         className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold leading-tight max-w-3xl"
       >
-        <span className="text-primary">Desenvolvedora Web</span> transformando ideias em experiências digitais com foco em performance e conversão
+        {t.heroTitle}
       </motion.h1>
 
       <motion.div
@@ -29,11 +32,9 @@ const Hero = () => {
         <div>
           <div className="flex items-center gap-2 mb-1">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span className="text-sm font-medium text-foreground">Disponível para novos projetos</span>
+            <span className="text-sm font-medium text-foreground">{t.availableForProjects}</span>
           </div>
-          <p className="text-sm text-muted-foreground">
-            São Paulo, SP · Full Stack · PHP, JavaScript, WordPress
-          </p>
+          <p className="text-sm text-muted-foreground">{t.location}</p>
         </div>
 
         <div className="flex items-center gap-4">

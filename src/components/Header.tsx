@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
-import { Mail, FileText, Moon, Sun } from "lucide-react";
+import { Mail, FileText, Moon, Sun, Globe } from "lucide-react";
 import { useEffect, useState } from "react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
+  const { lang, setLang, t } = useLanguage();
   const [dark, setDark] = useState(() => {
     if (typeof window !== "undefined") {
       return localStorage.getItem("theme") === "dark";
@@ -30,11 +32,11 @@ const Header = () => {
         />
         <div>
           <p className="font-heading font-semibold text-sm text-foreground">Bruna Lima</p>
-          <p className="text-xs text-muted-foreground">Desenvolvedora Web</p>
+          <p className="text-xs text-muted-foreground">{t.webDeveloper}</p>
         </div>
       </div>
 
-      <div className="flex items-center gap-6">
+      <div className="flex items-center gap-4">
         <a
           href="mailto:contato@brunarafaela.online"
           className="hidden sm:flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -49,12 +51,20 @@ const Header = () => {
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <FileText className="w-3.5 h-3.5" />
-          Currículo
+          {t.resume}
         </a>
+        <button
+          onClick={() => setLang(lang === "pt" ? "en" : "pt")}
+          className="flex items-center gap-1 px-2 py-1.5 rounded-md text-xs font-medium text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
+          aria-label="Toggle language"
+        >
+          <Globe className="w-3.5 h-3.5" />
+          {lang === "pt" ? "EN" : "PT"}
+        </button>
         <button
           onClick={() => setDark(!dark)}
           className="p-2 rounded-md text-muted-foreground hover:text-foreground hover:bg-muted transition-colors"
-          aria-label="Alternar tema"
+          aria-label="Toggle theme"
         >
           {dark ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
         </button>
