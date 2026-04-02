@@ -1,33 +1,7 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 import { useLanguage } from "@/contexts/LanguageContext";
-
-const projectsData = [
-  {
-    title: "Hypera Pharma",
-    image: "https://www.brunarafaela.online/assets/hypera-pharma-CXVxjGj_.webp",
-    techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
-  },
-  {
-    title: "Nebacetin",
-    image: "https://www.brunarafaela.online/assets/nebacetin-2KQgqhf0.webp",
-    techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
-  },
-  {
-    title: "Mantecorp Skincare",
-    image: "https://www.brunarafaela.online/assets/mantecorp-skincare-BLFotFap.webp",
-    techs: ["PHP", "JavaScript", "Bootstrap", "Figma", "SEO", "GTM"],
-  },
-  {
-    title: "Neo Química Vale por Dois",
-    image: "https://www.brunarafaela.online/assets/neo-quimica-DGJ6ZhmW.webp",
-    techs: ["PHP", "MySQL", "JavaScript", "Docker", "API REST"],
-  },
-  {
-    title: "Mantecorp Saúde",
-    image: "https://www.brunarafaela.online/assets/mantecorp-saude-CTJ-e8a6.webp",
-    techs: ["PHP", "MySQL", "API REST", "Docker", "Azure DevOps", "SEO"],
-  },
-];
+import { projectsData } from "@/data/projects";
 
 const Projects = () => {
   const { t } = useLanguage();
@@ -51,29 +25,33 @@ const Projects = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
-            className="group bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300"
           >
-            <div className="aspect-[16/10] overflow-hidden">
-              <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-              />
-            </div>
-            <div className="p-5">
-              <h3 className="font-heading font-semibold text-foreground mb-2">{project.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">{t.projectDescriptions[i]}</p>
-              <div className="flex flex-wrap gap-1.5">
-                {project.techs.map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-2 py-0.5 text-xs rounded-full bg-secondary text-secondary-foreground"
-                  >
-                    {tech}
-                  </span>
-                ))}
+            <Link
+              to={`/projeto/${project.slug}`}
+              className="group block bg-card rounded-2xl overflow-hidden border border-border/50 hover:border-primary/30 transition-all duration-300"
+            >
+              <div className="aspect-[16/10] overflow-hidden">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                />
               </div>
-            </div>
+              <div className="p-5">
+                <h3 className="font-heading font-semibold text-foreground mb-2">{project.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed mb-4">{t.projectDescriptions[i]}</p>
+                <div className="flex flex-wrap gap-1.5">
+                  {project.techs.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-2 py-0.5 text-xs rounded-full bg-secondary text-secondary-foreground"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+            </Link>
           </motion.div>
         ))}
       </div>
