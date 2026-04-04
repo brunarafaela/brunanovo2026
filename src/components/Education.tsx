@@ -23,16 +23,10 @@ const Education = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="py-5 border-b border-border last:border-b-0 grid md:grid-cols-[200px_1fr] gap-3"
+            className="py-5 border-b border-border last:border-b-0"
           >
-            <div>
-              <span className="text-xs px-2 py-0.5 rounded-full bg-secondary text-secondary-foreground">{edu.type}</span>
-              <p className="text-xs text-muted-foreground mt-2">{edu.period}</p>
-            </div>
-            <div>
-              <p className="font-heading font-semibold text-foreground text-sm">{edu.title}</p>
-              <p className="text-sm text-muted-foreground mt-1">{edu.institution}</p>
-            </div>
+            <p className="font-heading font-semibold text-foreground text-sm">{edu.title}</p>
+            <p className="text-xs text-muted-foreground mt-1">{edu.institution} · {edu.period}</p>
           </motion.div>
         ))}
       </div>
