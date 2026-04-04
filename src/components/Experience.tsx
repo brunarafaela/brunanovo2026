@@ -1,14 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
 
-const techsByCompany = [
-  ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "SCSS", "Bootstrap", "Docker", "Azure DevOps", "Git"],
-  ["WordPress", "PHP", "MySQL", "JavaScript", "HTML", "CSS", "SCSS", "ACF", "SEO"],
-  ["WordPress", "PHP", "JavaScript", "HTML", "CSS", "SCSS", "jQuery", "Liferay"],
-  ["JavaScript", "HTML", "CSS", "Vue.js", "Git"],
-  ["PHP", "MySQL", "JavaScript", "HTML", "CSS", "WordPress", "jQuery", "Bootstrap"],
-];
-
 const Experience = () => {
   const { t } = useLanguage();
 
@@ -31,24 +23,12 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="group py-6 border-b border-border last:border-b-0 grid md:grid-cols-[200px_1fr] gap-4"
+            className="py-5 border-b border-border last:border-b-0 grid md:grid-cols-[200px_1fr] gap-3"
           >
+            <p className="text-xs text-muted-foreground">{exp.period}</p>
             <div>
-              <p className="text-xs text-muted-foreground">{exp.period}</p>
-              <p className="text-sm font-medium text-foreground mt-1">{exp.company}</p>
-            </div>
-            <div>
-              <p className="font-heading font-semibold text-foreground">{exp.role}</p>
-              <div className="flex flex-wrap gap-1.5 mt-3">
-                {techsByCompany[i].map((tech) => (
-                  <span
-                    key={tech}
-                    className="px-2 py-0.5 text-xs rounded-full bg-secondary text-secondary-foreground"
-                  >
-                    {tech}
-                  </span>
-                ))}
-              </div>
+              <p className="font-heading font-semibold text-foreground text-sm">{exp.role}</p>
+              <p className="text-sm text-muted-foreground mt-1">{exp.company}</p>
             </div>
           </motion.div>
         ))}
