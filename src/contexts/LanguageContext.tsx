@@ -63,6 +63,7 @@ const translations = {
     needADev: "Precisa de uma desenvolvedora?",
     contactText: "Estou sempre aberta a novas oportunidades e projetos interessantes. Se quiser trocar uma ideia, é só me chamar!",
     hireMe: "Me contrate!",
+    viewDetails: "Ver detalhes",
     copyright: "© 2025 Bruna Lima. Todos os direitos reservados.",
   },
   en: {
@@ -117,6 +118,7 @@ const translations = {
     needADev: "Need a developer?",
     contactText: "I'm always open to new opportunities and interesting projects. If you'd like to chat, just reach out!",
     hireMe: "Hire me!",
+    viewDetails: "View details",
     copyright: "© 2025 Bruna Lima. All rights reserved.",
   },
 } as const;

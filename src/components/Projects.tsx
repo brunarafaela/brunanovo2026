@@ -37,19 +37,9 @@ const Projects = () => {
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
-              <div className="p-5">
-                <h3 className="font-heading font-semibold text-foreground mb-2">{project.title}</h3>
-                <p className="text-sm text-muted-foreground leading-relaxed mb-4">{t.projectDescriptions[i]}</p>
-                <div className="flex flex-wrap gap-1.5">
-                  {project.techs.map((tech) => (
-                    <span
-                      key={tech}
-                      className="px-2 py-0.5 text-xs rounded-full bg-secondary text-secondary-foreground"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
+              <div className="p-5 flex items-center justify-between">
+                <h3 className="font-heading font-semibold text-foreground">{project.title}</h3>
+                <span className="text-xs text-primary font-medium">{t.viewDetails} →</span>
               </div>
             </Link>
           </motion.div>
