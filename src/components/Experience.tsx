@@ -23,13 +23,10 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.05 }}
-            className="py-5 border-b border-border last:border-b-0 grid md:grid-cols-[200px_1fr] gap-3"
+            className="py-5 border-b border-border last:border-b-0"
           >
-            <p className="text-xs text-muted-foreground">{exp.period}</p>
-            <div>
-              <p className="font-heading font-semibold text-foreground text-sm">{exp.role}</p>
-              <p className="text-sm text-muted-foreground mt-1">{exp.company}</p>
-            </div>
+            <p className="font-heading font-semibold text-foreground text-sm">{exp.role}</p>
+            <p className="text-xs text-muted-foreground mt-1">{exp.company} · {exp.period}</p>
           </motion.div>
         ))}
       </div>
