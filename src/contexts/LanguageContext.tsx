@@ -56,7 +56,7 @@ const translations = {
       { type: "Especialização", title: "Pós-graduação em Engenharia de Software com Metodologias Ágeis", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
       { type: "Graduação", title: "Tecnólogo em Análise e Desenvolvimento de Sistemas", institution: "FATEC Ipiranga", period: "2016 - 2020" },
       { type: "Técnico", title: "Técnico em Informática", institution: "ETEC de Heliópolis", period: "2013 - 2014" },
-      { type: "Técnico", title: "Técnico em Administração", institution: "ETEC de Heliópolis", period: "2011 - 2012" },
+      { type: "Técnico", title: "Técnico em Administração", institution: "ETEC Getúlio Vargas", period: "2015 - 2016" },
     ],
     // Contact
     letsChat: "Vamos conversar?",
@@ -111,7 +111,7 @@ const translations = {
       { type: "Specialization", title: "Postgraduate in Software Engineering with Agile Methodologies", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
       { type: "Bachelor's", title: "Systems Analysis and Development", institution: "FATEC Ipiranga", period: "2016 - 2020" },
       { type: "Technical", title: "IT Technician", institution: "ETEC de Heliópolis", period: "2013 - 2014" },
-      { type: "Technical", title: "Business Administration Technician", institution: "ETEC de Heliópolis", period: "2011 - 2012" },
+      { type: "Technical", title: "Business Administration Technician", institution: "ETEC Getúlio Vargas", period: "2015 - 2016" },
     ],
     letsChat: "Let's talk?",
     needADev: "Need a developer?",
