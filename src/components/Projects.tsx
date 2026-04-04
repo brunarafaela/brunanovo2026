@@ -1,30 +1,56 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import { projectsData } from "@/data/projects";
 
+const ITEMS_PER_PAGE = 3;
+
 const Projects = () => {
   const { t } = useLanguage();
+  const [page, setPage] = useState(0);
+  const totalPages = Math.ceil(projectsData.length / ITEMS_PER_PAGE);
+  const visible = projectsData.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE);
 
   return (
     <section className="px-6 md:px-12 lg:px-16 py-20">
-      <motion.p
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        viewport={{ once: true }}
-        className="text-sm font-medium text-primary mb-8"
-      >
-        {t.portfolio}
-      </motion.p>
+      <div className="flex items-center justify-between mb-8">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-sm font-medium text-primary"
+        >
+          {t.portfolio}
+        </motion.p>
+        {totalPages > 1 && (
+          <div className="flex gap-2">
+            <button
+              onClick={() => setPage((p) => Math.max(0, p - 1))}
+              disabled={page === 0}
+              className="p-1.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            >
+              <ChevronLeft className="w-4 h-4" />
+            </button>
+            <button
+              onClick={() => setPage((p) => Math.min(totalPages - 1, p + 1))}
+              disabled={page === totalPages - 1}
+              className="p-1.5 rounded-full border border-border text-muted-foreground hover:text-foreground hover:border-primary/50 transition-colors disabled:opacity-30 disabled:cursor-not-allowed"
+            >
+              <ChevronRight className="w-4 h-4" />
+            </button>
+          </div>
+        )}
+      </div>
 
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {projectsData.map((project, i) => (
+        {visible.map((project) => (
           <motion.div
             key={project.title}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: i * 0.08 }}
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3 }}
           >
             <Link
               to={`/projeto/${project.slug}`}
