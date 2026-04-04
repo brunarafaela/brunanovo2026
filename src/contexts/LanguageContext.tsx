@@ -111,6 +111,7 @@ const translations = {
       { type: "Specialization", title: "Postgraduate in Software Engineering with Agile Methodologies", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
       { type: "Bachelor's", title: "Systems Analysis and Development", institution: "FATEC Ipiranga", period: "2016 - 2020" },
       { type: "Technical", title: "IT Technician", institution: "ETEC de Heliópolis", period: "2013 - 2014" },
+      { type: "Technical", title: "Business Administration Technician", institution: "ETEC de Heliópolis", period: "2011 - 2012" },
     ],
     letsChat: "Let's talk?",
     needADev: "Need a developer?",
