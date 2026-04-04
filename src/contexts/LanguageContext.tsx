@@ -63,6 +63,7 @@ const translations = {
     needADev: "Precisa de uma desenvolvedora?",
     contactText: "Estou sempre aberta a novas oportunidades e projetos interessantes. Se quiser trocar uma ideia, é só me chamar!",
     hireMe: "Me contrate!",
+    viewDetails: "Ver detalhes",
     copyright: "© 2025 Bruna Lima. Todos os direitos reservados.",
   },
   en: {
