@@ -118,6 +118,7 @@ const translations = {
     needADev: "Need a developer?",
     contactText: "I'm always open to new opportunities and interesting projects. If you'd like to chat, just reach out!",
     hireMe: "Hire me!",
+    viewDetails: "View details",
     copyright: "© 2025 Bruna Lima. All rights reserved.",
   },
 } as const;
