@@ -45,7 +45,7 @@ const Header = () => {
           contato@brunarafaela.online
         </a>
         <a
-          href="https://www.brunarafaela.online/"
+          href="https://docs.google.com/document/d/1AoeJ5DXp_bBN9dKiyRcPwdpzZv3zuwxIE1uekEBBXfI/edit?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"

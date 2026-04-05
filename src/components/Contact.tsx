@@ -1,6 +1,12 @@
 import { motion } from "framer-motion";
-import { ArrowUpRight } from "lucide-react";
+import { ArrowUpRight, Github, Linkedin, Instagram } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
+
+const footerSocials = [
+  { icon: Github, href: "https://github.com/brunarafaela", label: "GitHub" },
+  { icon: Linkedin, href: "https://www.linkedin.com/in/brunarafaela/", label: "LinkedIn" },
+  { icon: Instagram, href: "https://www.instagram.com/brunarafaela", label: "Instagram" },
+];
 
 const Contact = () => {
   const { t } = useLanguage();
@@ -26,7 +32,21 @@ const Contact = () => {
         </a>
       </motion.div>
 
-      <div className="mt-20 pt-8 border-t border-border">
+      <div className="mt-20 pt-8 border-t border-border flex flex-col items-center gap-4">
+        <div className="flex items-center gap-5">
+          {footerSocials.map(({ icon: Icon, href, label }) => (
+            <a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label={label}
+            >
+              <Icon className="w-5 h-5" />
+            </a>
+          ))}
+        </div>
         <p className="text-xs text-muted-foreground">{t.copyright}</p>
       </div>
     </section>

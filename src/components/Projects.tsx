@@ -79,10 +79,10 @@ const Projects = () => {
         className="mt-8 text-center"
       >
         <a
-          href="https://github.com/brunarafaela?tab=repositories"
+          href="https://www.flickr.com/photos/156816884@N08/with/51119657659"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-primary hover:underline"
+          className="text-sm text-primary hover:underline font-bold"
         >
           {t.viewMoreGithub}
         </a>

@@ -49,7 +49,7 @@ const translations = {
       "Landing page da promoção Neo Química Vale por Dois, com um buscador de farmácias integrado via API REST.",
       "Novo portal integrado ao serviço Interplayers. Área médica e paciente, adesão a medicamentos. Front-end, back-end e reestruturação do banco de dados.",
     ],
-    viewMoreGithub: "Ver mais no GitHub →",
+    viewMoreGithub: "Ver trabalhos em WordPress",
     // Education
     academicBackground: "Formação Acadêmica",
     educationItems: [
@@ -64,7 +64,7 @@ const translations = {
     contactText: "Estou sempre aberta a novas oportunidades e projetos interessantes. Se quiser trocar uma ideia, é só me chamar!",
     hireMe: "Me contrate!",
     viewDetails: "Ver detalhes",
-    copyright: "© 2025 Bruna Lima. Todos os direitos reservados.",
+    copyright: "© 2026 Bruna Lima. Todos os direitos reservados.",
   },
   en: {
     webDeveloper: "Web Developer",
@@ -106,7 +106,7 @@ const translations = {
       "Landing page for the Neo Química Vale por Dois promotion, with a pharmacy finder integrated via REST API.",
       "New portal integrated with the Interplayers service. Medical and patient area, medication adherence. Front-end, back-end and database restructuring.",
     ],
-    viewMoreGithub: "View more on GitHub →",
+    viewMoreGithub: "View WordPress work",
     academicBackground: "Education",
     educationItems: [
       { type: "Specialization", title: "Postgraduate in Software Engineering with Agile Methodologies", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
@@ -119,7 +119,7 @@ const translations = {
     contactText: "I'm always open to new opportunities and interesting projects. If you'd like to chat, just reach out!",
     hireMe: "Hire me!",
     viewDetails: "View details",
-    copyright: "© 2025 Bruna Lima. All rights reserved.",
+    copyright: "© 2026 Bruna Lima. All rights reserved.",
   },
 } as const;
 

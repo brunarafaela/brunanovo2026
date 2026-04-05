@@ -5,28 +5,31 @@ const Experience = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="px-6 md:px-12 lg:px-16 py-20">
+    <section className="px-6 md:px-12 lg:px-16 py-10">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        className="text-sm font-medium text-primary mb-8"
+        className="text-xs font-medium text-muted-foreground uppercase tracking-wider mb-4"
       >
         {t.professionalExperience}
       </motion.p>
 
-      <div className="space-y-0">
+      <div className="max-w-xl">
         {t.experiences.map((exp, i) => (
           <motion.div
             key={exp.company}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ delay: i * 0.05 }}
-            className="py-5 border-b border-border last:border-b-0"
+            transition={{ delay: i * 0.03 }}
+            className="flex items-baseline justify-between py-2 border-b border-border/40 last:border-b-0"
           >
-            <p className="font-heading font-semibold text-foreground text-sm">{exp.role}</p>
-            <p className="text-xs text-muted-foreground mt-1">{exp.company} · {exp.period}</p>
+            <div className="flex items-baseline gap-2">
+              <span className="text-sm text-foreground">{exp.role}</span>
+              <span className="text-xs text-muted-foreground">— {exp.company}</span>
+            </div>
+            <span className="text-xs text-muted-foreground/70 shrink-0 ml-4">{exp.period}</span>
           </motion.div>
         ))}
       </div>
