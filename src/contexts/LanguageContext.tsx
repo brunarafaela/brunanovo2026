@@ -49,7 +49,7 @@ const translations = {
       "Landing page da promoção Neo Química Vale por Dois, com um buscador de farmácias integrado via API REST.",
       "Novo portal integrado ao serviço Interplayers. Área médica e paciente, adesão a medicamentos. Front-end, back-end e reestruturação do banco de dados.",
     ],
-    viewMoreGithub: "Ver mais no GitHub →",
+    viewMoreGithub: "Ver trabalhos em WordPress",
     // Education
     academicBackground: "Formação Acadêmica",
     educationItems: [
