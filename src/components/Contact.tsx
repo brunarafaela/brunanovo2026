@@ -5,7 +5,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const footerSocials = [
   { icon: Github, href: "https://github.com/brunarafaela", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/brunarafaela/", label: "LinkedIn" },
-  { icon: Instagram, href: "https://www.instagram.com/brunarafaela", label: "Instagram" },
+  { icon: Instagram, href: "https://www.instagram.com/bruna.dev", label: "Instagram" },
 ];
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
         </h2>
         <p className="text-muted-foreground max-w-lg mx-auto mb-8">{t.contactText}</p>
         <a
-          href="mailto:contato@brunarafaela.online"
+          href="mailto:contato@brunarafaelav@outlook.com"
           className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-full font-heading font-medium text-sm hover:opacity-90 transition-opacity"
         >
           {t.hireMe}

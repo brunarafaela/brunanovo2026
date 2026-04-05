@@ -38,11 +38,11 @@ const Header = () => {
 
       <div className="flex items-center gap-4">
         <a
-          href="mailto:contato@brunarafaela.online"
+          href="mailto:contato@brunarafaelav@outlook.com"
           className="hidden sm:flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
         >
           <Mail className="w-3.5 h-3.5" />
-          contato@brunarafaela.online
+          Contato
         </a>
         <a
           href="https://docs.google.com/document/d/1AoeJ5DXp_bBN9dKiyRcPwdpzZv3zuwxIE1uekEBBXfI/edit?usp=sharing"
