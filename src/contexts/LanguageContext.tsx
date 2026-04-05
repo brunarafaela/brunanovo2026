@@ -10,11 +10,7 @@ const translations = {
     // Hero
     heroTitle: (
       <>
-        Bruna Lima 👋
-        <br />
-        <span className="text-primary">Desenvolvedora Web</span>
-        <br />
-        <span className="text-muted-foreground text-2xl md:text-3xl lg:text-4xl font-normal">Apaixonada por tecnologia e criar experiências digitais com foco em Performance e Conversão.</span>
+        <span className="text-primary">Desenvolvedora Web</span> transformando ideias em experiências digitais com foco em performance e conversão
       </>
     ),
     availableForProjects: "Disponível para novos projetos",
@@ -75,11 +71,7 @@ const translations = {
     resume: "Resume",
     heroTitle: (
       <>
-        Bruna Lima 👋
-        <br />
-        <span className="text-primary">Web Developer</span>
-        <br />
-        <span className="text-muted-foreground text-2xl md:text-3xl lg:text-4xl font-normal">Passionate about technology and creating digital experiences focused on Performance and Conversion.</span>
+        <span className="text-primary">Web Developer</span> turning ideas into digital experiences focused on performance and conversion
       </>
     ),
     availableForProjects: "Available for new projects",
