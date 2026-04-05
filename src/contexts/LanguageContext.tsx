@@ -106,7 +106,7 @@ const translations = {
       "Landing page for the Neo Química Vale por Dois promotion, with a pharmacy finder integrated via REST API.",
       "New portal integrated with the Interplayers service. Medical and patient area, medication adherence. Front-end, back-end and database restructuring.",
     ],
-    viewMoreGithub: "View more on GitHub →",
+    viewMoreGithub: "View WordPress work",
     academicBackground: "Education",
     educationItems: [
       { type: "Specialization", title: "Postgraduate in Software Engineering with Agile Methodologies", institution: "Universidade Cruzeiro do Sul", period: "2024 - 2025" },
