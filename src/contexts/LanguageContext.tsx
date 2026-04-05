@@ -10,7 +10,11 @@ const translations = {
     // Hero
     heroTitle: (
       <>
-        <span className="text-primary">Desenvolvedora Web</span> transformando ideias em experiências digitais com foco em performance e conversão
+        Bruna Lima 👋
+        <br />
+        <span className="text-primary">Desenvolvedora Web</span>
+        <br />
+        <span className="text-muted-foreground text-2xl md:text-3xl lg:text-4xl font-normal">Apaixonada por tecnologia e criar experiências digitais com foco em Performance e Conversão.</span>
       </>
     ),
     availableForProjects: "Disponível para novos projetos",
