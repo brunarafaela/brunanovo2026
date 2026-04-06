@@ -14,7 +14,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="https://avatars.githubusercontent.com/u/33139758"
+            src={profilePhoto}
             alt="Bruna Lima"
             className="w-full max-w-sm rounded-2xl object-cover aspect-square"
           />

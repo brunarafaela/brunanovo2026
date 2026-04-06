@@ -1,8 +1,8 @@
-import hyperaPharmaImg from "@/assets/hypera-pharma.png";
-import nebacetinImg from "@/assets/nebacetin.png";
-import mantecorpSkincareImg from "@/assets/mantecorp-skincare.png";
-import neoQuimicaImg from "@/assets/neo-quimica.png";
-import mantecorpSaudeImg from "@/assets/mantecorp-saude.png";
+import hyperaPharmaImg from "@/assets/hypera-pharma.webp";
+import nebacetinImg from "@/assets/nebacetin.webp";
+import mantecorpSkincareImg from "@/assets/mantecorp-skincare.webp";
+import neoQuimicaImg from "@/assets/neo-quimica.webp";
+import mantecorpSaudeImg from "@/assets/mantecorp-saude.webp";
 
 export interface Project {
   slug: string;
