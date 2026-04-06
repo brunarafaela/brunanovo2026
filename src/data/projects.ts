@@ -1,3 +1,9 @@
+import hyperaPharmaImg from "@/assets/hypera-pharma.png";
+import nebacetinImg from "@/assets/nebacetin.png";
+import mantecorpSkincareImg from "@/assets/mantecorp-skincare.png";
+import neoQuimicaImg from "@/assets/neo-quimica.png";
+import mantecorpSaudeImg from "@/assets/mantecorp-saude.png";
+
 export interface Project {
   slug: string;
   title: string;
@@ -10,34 +16,34 @@ export const projectsData: Project[] = [
   {
     slug: "hypera-pharma",
     title: "Hypera Pharma",
-    image: "https://www.brunarafaela.online/assets/hypera-pharma-CXVxjGj_.webp",
+    image: hyperaPharmaImg,
     techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
     url: "https://www.hypera.com.br",
   },
   {
     slug: "nebacetin",
     title: "Nebacetin",
-    image: "https://www.brunarafaela.online/assets/nebacetin-2KQgqhf0.webp",
+    image: nebacetinImg,
     techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
     url: "https://www.nebacetin.com.br",
   },
   {
     slug: "mantecorp-skincare",
     title: "Mantecorp Skincare",
-    image: "https://www.brunarafaela.online/assets/mantecorp-skincare-BLFotFap.webp",
+    image: mantecorpSkincareImg,
     techs: ["PHP", "JavaScript", "Bootstrap", "Figma", "SEO", "GTM"],
     url: "https://www.mantecorpskincare.com.br",
   },
   {
     slug: "neo-quimica-vale-por-dois",
     title: "Neo Química Vale por Dois",
-    image: "https://www.brunarafaela.online/assets/neo-quimica-DGJ6ZhmW.webp",
+    image: neoQuimicaImg,
     techs: ["PHP", "MySQL", "JavaScript", "Docker", "API REST"],
   },
   {
     slug: "mantecorp-saude",
     title: "Mantecorp Saúde",
-    image: "https://www.brunarafaela.online/assets/mantecorp-saude-CTJ-e8a6.webp",
+    image: mantecorpSaudeImg,
     techs: ["PHP", "MySQL", "API REST", "Docker", "Azure DevOps", "SEO"],
     url: "https://www.mantecorpsaude.com.br",
   },
