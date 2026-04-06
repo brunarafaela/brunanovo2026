@@ -26,7 +26,7 @@ const Header = () => {
     >
       <div className="flex items-center gap-3">
         <img
-          src="https://www.brunarafaela.online/assets/profile-photo-QhkyKn_c.webp"
+          src="https://avatars.githubusercontent.com/u/33139758"
           alt="Bruna Lima"
           className="w-9 h-9 rounded-full object-cover"
         />

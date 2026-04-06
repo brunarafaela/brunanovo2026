@@ -14,7 +14,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <img
-            src="https://www.brunarafaela.online/assets/profile-photo-QhkyKn_c.webp"
+            src="https://avatars.githubusercontent.com/u/33139758"
             alt="Bruna Lima"
             className="w-full max-w-sm rounded-2xl object-cover aspect-square"
           />
