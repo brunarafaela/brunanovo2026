@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
   {
     slug: "nebacetin",
     title: "Nebacetin",
-    image: "https://www.brunarafaela.online/assets/nebacetin-2KQgqhf0.webp",
+    image: nebacetinImg,
     techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
     url: "https://www.nebacetin.com.br",
   },
