@@ -5,8 +5,8 @@ import { useLanguage } from "@/contexts/LanguageContext";
 const socialLinks = [
   { icon: Github, href: "https://github.com/brunarafaela", label: "GitHub" },
   { icon: Linkedin, href: "https://www.linkedin.com/in/brunarafaela/", label: "LinkedIn" },
-  { icon: Twitch, href: "#", label: "Twitch" },
-  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: Twitch, href: "https://www.twitch.tv/rafinha_php", label: "Twitch" },
+  { icon: Instagram, href: "https://www.instagram.com/bruna.dev/", label: "Instagram" },
 ];
 
 const Hero = () => {
