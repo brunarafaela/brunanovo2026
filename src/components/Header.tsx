@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import profilePhoto from "@/assets/profile-photo.webp";
 import { Mail, FileText, Moon, Sun, Globe } from "lucide-react";
 import { useEffect, useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -26,7 +27,7 @@ const Header = () => {
     >
       <div className="flex items-center gap-3">
         <img
-          src="https://avatars.githubusercontent.com/u/33139758"
+          src={profilePhoto}
           alt="Bruna Lima"
           className="w-9 h-9 rounded-full object-cover"
         />
