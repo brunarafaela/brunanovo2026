@@ -37,7 +37,7 @@ export const projectsData: Project[] = [
   {
     slug: "neo-quimica-vale-por-dois",
     title: "Neo Química Vale por Dois",
-    image: "https://www.brunarafaela.online/assets/neo-quimica-DGJ6ZhmW.webp",
+    image: neoQuimicaImg,
     techs: ["PHP", "MySQL", "JavaScript", "Docker", "API REST"],
   },
   {
