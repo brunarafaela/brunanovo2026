@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useLanguage } from "@/contexts/LanguageContext";
+import profilePhoto from "@/assets/profile-photo.webp";
 
 const About = () => {
   const { t } = useLanguage();
