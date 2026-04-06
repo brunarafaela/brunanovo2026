@@ -43,7 +43,7 @@ export const projectsData: Project[] = [
   {
     slug: "mantecorp-saude",
     title: "Mantecorp Saúde",
-    image: "https://www.brunarafaela.online/assets/mantecorp-saude-CTJ-e8a6.webp",
+    image: mantecorpSaudeImg,
     techs: ["PHP", "MySQL", "API REST", "Docker", "Azure DevOps", "SEO"],
     url: "https://www.mantecorpsaude.com.br",
   },
