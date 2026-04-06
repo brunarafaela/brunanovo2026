@@ -16,7 +16,7 @@ export const projectsData: Project[] = [
   {
     slug: "hypera-pharma",
     title: "Hypera Pharma",
-    image: "https://www.brunarafaela.online/assets/hypera-pharma-CXVxjGj_.webp",
+    image: hyperaPharmaImg,
     techs: ["PHP", "MySQL", "JavaScript", "Bootstrap", "Docker", "SEO"],
     url: "https://www.hypera.com.br",
   },
