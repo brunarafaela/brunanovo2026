@@ -30,7 +30,7 @@ export const projectsData: Project[] = [
   {
     slug: "mantecorp-skincare",
     title: "Mantecorp Skincare",
-    image: "https://www.brunarafaela.online/assets/mantecorp-skincare-BLFotFap.webp",
+    image: mantecorpSkincareImg,
     techs: ["PHP", "JavaScript", "Bootstrap", "Figma", "SEO", "GTM"],
     url: "https://www.mantecorpskincare.com.br",
   },
