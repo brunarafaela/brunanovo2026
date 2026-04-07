@@ -5,7 +5,7 @@ const Education = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="px-6 md:px-12 lg:px-16 py-10">
+    <section className="px-6 md:px-12 lg:px-16 py-10 md:flex md:flex-col md:items-end">
       <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
