@@ -15,7 +15,7 @@ const Experience = () => {
         {t.professionalExperience}
       </motion.p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
+      <div className="flex flex-col gap-3 max-w-4xl">
         {t.experiences.map((exp, i) => (
           <motion.div
             key={exp.company}
