@@ -15,7 +15,7 @@ const Experience = () => {
         {t.professionalExperience}
       </motion.p>
 
-      <div className="max-w-xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl">
         {t.experiences.map((exp, i) => (
           <motion.div
             key={exp.company}
@@ -23,13 +23,11 @@ const Experience = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: i * 0.03 }}
-            className="flex items-baseline justify-between py-2 border-b border-border/40 last:border-b-0"
+            className="p-4 rounded-lg border border-border/40 bg-card/50"
           >
-            <div className="flex items-baseline gap-2">
-              <span className="text-sm text-foreground">{exp.role}</span>
-              <span className="text-xs text-muted-foreground">— {exp.company}</span>
-            </div>
-            <span className="text-xs text-muted-foreground/70 shrink-0 ml-4">{exp.period}</span>
+            <span className="text-sm font-medium text-foreground block">{exp.role}</span>
+            <span className="text-xs text-muted-foreground">{exp.company}</span>
+            <span className="text-xs text-muted-foreground/70 block mt-1">{exp.period}</span>
           </motion.div>
         ))}
       </div>
