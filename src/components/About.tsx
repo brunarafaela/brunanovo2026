@@ -30,16 +30,7 @@ const About = () => {
           <p className="text-sm font-medium text-primary mb-2">{t.aboutMe}</p>
           <p className="text-foreground leading-relaxed mb-4">{t.aboutP1}</p>
           <p className="text-muted-foreground leading-relaxed mb-4">{t.aboutP2}</p>
-          <p className="text-muted-foreground leading-relaxed mb-8">{t.aboutP3}</p>
-
-          <div className="grid grid-cols-2 gap-3">
-            {t.services.map((service) => (
-              <div key={service} className="flex items-center gap-2 text-sm text-muted-foreground">
-                <span className="text-primary">▹</span>
-                {service}
-              </div>
-            ))}
-          </div>
+          <p className="text-muted-foreground leading-relaxed">{t.aboutP3}</p>
         </motion.div>
       </div>
     </section>
